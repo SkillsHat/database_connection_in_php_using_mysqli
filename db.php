@@ -1,12 +1,16 @@
-$hostname = "localhost";
-$username = "root";
-$password = "";
-$dbname   = "test";
+<?php
 
-$connect = new mysqli($hostname, $username, $password, $dbname);
+  $hostname = "localhost";
+  $username = "root";
+  $password = "";
+  $dbname   = "test";
 
-if($connnect->connect_errno){
-  echo "Connection Error : " . $connect->connect_error;
-} else {
-  echo "Successfully Connected.";
-}
+  $connect = new mysqli($hostname, $username, $password, $dbname);
+
+ // Check Connection.
+
+  if($connnect->connect_errno){
+    echo "Connection Error : " . $connect->connect_error;
+  } else {
+    echo "Successfully Connected.";
+  }
